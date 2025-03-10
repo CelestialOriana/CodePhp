@@ -27,5 +27,5 @@ if (isset($_POST['plus'])) {
 }
 
 // Affichage du résultat
-echo ". $resultat;
+echo "Le resultat de l'operation est : " . $resultat;
 ?>
