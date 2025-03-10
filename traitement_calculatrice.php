@@ -20,7 +20,7 @@ if (isset($_POST['plus'])) {
     $resultat = $chiffre1 * $chiffre2;
 } elseif (isset($_POST['divise'])) {
     if ($chiffre2 == 0) {
-        echo "Erreur : Division par zéro!";
+        echo "Erreur : Division par zéro";
         exit;
     }
     $resultat = $chiffre1 / $chiffre2;
