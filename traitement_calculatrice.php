@@ -4,7 +4,7 @@ $chiffre1 = isset($_POST['saisi1']) ? $_POST['saisi1'] : 0;
 $chiffre2 = isset($_POST['saisi2']) ? $_POST['saisi2'] : 0;
 
 if (!is_numeric($chiffre1) || !is_numeric($chiffre2)) {
-    echo "Veuillez entrer des nombres valides dans les deux champs.";
+    echo "entrer des nombres valides dans les deux champs.";
     exit;
 }
 
@@ -27,5 +27,5 @@ if (isset($_POST['plus'])) {
 }
 
 // Affichage du résultat
-echo "Le resultat de l'operation est : " . $resultat;
+echo ". $resultat;
 ?>
