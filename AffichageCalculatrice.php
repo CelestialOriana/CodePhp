@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="fr">
+<link rel="stylesheet" type="text/css" href="calculatrice.css">
 <head>
     <meta charset="UTF-8">
     <title>Calculatrice</title>
