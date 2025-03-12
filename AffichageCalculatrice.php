@@ -1,28 +1,31 @@
 <!DOCTYPE html>
 <html lang="fr">
-<link rel="stylesheet" type="text/css" href="calculatrice.css">
 <head>
     <meta charset="UTF-8">
     <title>Calculatrice</title>
+    <link rel="stylesheet" type="text/css" href="calculatrice.css">
 </head>
 <body>
 
-    <h1>Calculatrice simple</h1>
-
+<div class="calculatrice">
     <form action="traitement_calculatrice.php" method="post">
-        <label for="saisi1">Votre premier chiffre :</label>
-        <input type="text" name="saisi1" id="saisi1" required>
-        <br/>
+        <div class="ecran">
+            <input type="text" name="saisi1" required>
+        </div>
+        <div class="ecran">
+            <input type="text" name="saisi2" required>
+        </div>
 
-        <label for="saisi2">Votre deuxième chiffre :</label>
-        <input type="text" name="saisi2" id="saisi2" required>
-        <br/>
+        <div class="buttons">
+            <button type="submit" name="plus" class="button operator">+</button>
+            <button type="submit" name="moins" class="button operator">−</button>
+            <button type="submit" name="multiplie" class="button operator">×</button>
+            <button type="submit" name="divise" class="button operator">÷</button>
+        </div>
 
-        <input type="submit" name="plus" value="+">
-        <input type="submit" name="moins" value="-">
-        <input type="submit" name="multiplie" value="X">
-        <input type="submit" name="divise" value="/">
+        <a href="traitement_calculatrice.php" class="return-btn">Voir le Résultat</a>
     </form>
+</div>
+
 </body>
 </html>
-
