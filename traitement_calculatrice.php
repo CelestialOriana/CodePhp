@@ -43,7 +43,7 @@ if (isset($_POST['plus'])) {
         <?php echo $resultat; ?>
     </div>
 
-    <a href="index.html" class="return-btn">Retour à la calculatrice</a>
+    <a href="AffichageCalculatrice.php" class="return-btn">Retour à la calculatrice</a>
 </div>
 
 </body>
