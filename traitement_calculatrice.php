@@ -4,7 +4,7 @@ $chiffre1 = isset($_POST['saisi1']) ? $_POST['saisi1'] : 0;
 $chiffre2 = isset($_POST['saisi2']) ? $_POST['saisi2'] : 0;
 
 if (!is_numeric($chiffre1) || !is_numeric($chiffre2)) {
-    echo "entrer des nombres valides dans les deux champs.";
+    echo "Veuillez entrer des nombres valides dans les deux champs.";
     exit;
 }
 
@@ -25,7 +25,26 @@ if (isset($_POST['plus'])) {
     }
     $resultat = $chiffre1 / $chiffre2;
 }
-
-// Affichage du résultat
-echo "Le resultat de l'operation est : " . $resultat;
 ?>
+
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <title>Calculatrice - Résultat</title>
+    <link rel="stylesheet" type="text/css" href="calculatrice.css">
+</head>
+<body>
+
+<div class="calculatrice">
+    <h1>Résultat</h1>
+
+    <div class="ecran">
+        <?php echo $resultat; ?>
+    </div>
+
+    <a href="index.html" class="return-btn">Retour à la calculatrice</a>
+</div>
+
+</body>
+</html>

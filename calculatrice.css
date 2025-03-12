@@ -28,6 +28,10 @@ body {
     box-shadow: inset 0px 2px 5px rgba(0, 0, 0, 0.2);
 }
 
+h1{
+    color: white;
+}
+
 .buttons {
     display: grid;
     grid-template-columns: repeat(4, 1fr);
